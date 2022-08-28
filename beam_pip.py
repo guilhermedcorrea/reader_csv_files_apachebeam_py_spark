@@ -30,7 +30,7 @@ def get_file_path(path):
 def search_item():
     file_name = os.listdir(arquivos_pipelines)
     excel = get_file_path(file_name)
-    file = list(filter(lambda k: excel if '.csv' in k else False))
+    file = list(filter(lambda k: excel if '.csv' in k else False,excel))
     return file
 
 #Decorador recebe e retorna
